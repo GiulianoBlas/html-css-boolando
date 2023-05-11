@@ -5,14 +5,10 @@
     box-sizing: border-box;
 }
 
-/* GENERAL */
+/* GENERAL_STRUCTURE */
 section,nav{
     margin: 0 auto;
     width: 80%;
-}
-
-a{
-    text-decoration: none;
 }
 
 img{
@@ -29,8 +25,17 @@ img{
     font-weight: bolder;
 }
 
-.text_color_white {
+.text_color_white  *{
     color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* GENERAL_ANIMATION */
+a:hover{
+    text-decoration: underline;
 }
 
 /*///////HEADER///////*/
@@ -92,8 +97,7 @@ nav{
 /* MAIN_STRUCTURE */
 main{
     margin-top: 100px;
-
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 
 }
 
@@ -112,6 +116,15 @@ main{
 .product_img{
     position: relative;
 }
+
+.product_img > .product_dysplay{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 .product_img >img{
     width: 100%;
 }
@@ -128,11 +141,15 @@ main{
     bottom: 40px;
 }
 
-/* MAIN_STYLE */
 .product_badje > *{
     padding: 5px;
 }
 
+.invisible_badje{
+    display:none ;
+}
+
+/* MAIN_STYLE */
 .green_badje{
     background-color: green;
 }
@@ -159,34 +176,45 @@ main{
     text-decoration:line-through
 }
 
+/* MAIN_ANIMATION */
+ .product_slot:hover .product_dysplay{
+    display:inline-block;
+
+}
+
 /*///////FOOTER///////*/
 
 /* FOOTER_STRUCTURE */
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left:0;
+    z-index: 3;
 
-/* MAIN_STYLE */
+}
+footer > section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer_slot > *{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER_STYLE */
 .footer_background{
     background-color: rgba(26,26,26,255);
 }
-/* DEBUG /
-
-.debug header{
-    background-color: orange;
+ 
+#infos > * {
+    margin-right: 10px;
 }
-/*  */
-.debug section,nav {
-    border: 1px dashed black;
-}
-/*  /
-.debug main section{
-    
+#socials_accounts > *{
+    font-size: 30px;
+    line-height: 17px;
 }
 
-.debug  .product_slot{
-    background-color: aquamarine;
-}
-
-.debug .product_img{
-    background-color: brown;
-}
-
-/*  */
