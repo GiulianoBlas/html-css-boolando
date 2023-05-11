@@ -1,0 +1,225 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL_STRUCTURE */
+section,nav{
+    margin: 0 auto;
+    width: 80%;
+}
+
+img{
+    display: inline-block;
+}
+
+/* GENERAL_STYLE */
+.font{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.small_bold_text{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.text_color_white  *{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* GENERAL_ANIMATION */
+a:hover{
+    text-decoration: underline;
+}
+
+/*///////HEADER///////*/
+
+/* HEADER_STRUCTURE */
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    z-index: 3;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nav_slot{
+       width: 20%; 
+       line-height: 36px;
+}
+
+.nav_left{
+    text-align: left;
+}
+
+.nav_right{
+    text-align: right;
+}
+
+.nav_left > a{
+    margin-right: 10px;
+}
+
+.nav_right > a{
+    margin-left: 10px;
+}
+
+.nav_slot >img{
+    width: 70%;
+    margin-inline: 15%;
+    display: block
+}
+
+/* HEADER_STYLE */
+.header_background{
+    background-color: rgba(255,105,0,255);
+}
+
+.text_color_white > .nav_slot >a{
+    color: white;
+}
+
+/*///////MAIN///////*/
+
+/* MAIN_STRUCTURE */
+main{
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+}
+
+.product_row{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px -10px;
+
+}
+
+.product_slot{
+    width: calc((100% / 3 ) - 20px);
+    margin-inline: 10px;
+}
+
+.product_img{
+    position: relative;
+}
+
+.product_img > .product_dysplay{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.product_img >img{
+    width: 100%;
+}
+
+.like_button{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.product_badje{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+
+.product_badje > *{
+    padding: 5px;
+}
+
+.invisible_badje{
+    display:none ;
+}
+
+/* MAIN_STYLE */
+.green_badje{
+    background-color: green;
+}
+
+.discount_badje{
+    background-color: red;
+}
+
+.like_button_style{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+    font-size: 25px;
+}
+
+.price{
+    color: red;
+
+}
+
+.old_price{
+    text-decoration:line-through
+}
+
+/* MAIN_ANIMATION */
+ .product_slot:hover .product_dysplay{
+    display:inline-block;
+}
+
+.like_button span:hover{
+    color: red;
+    font-size: 35px;
+}
+
+/*///////FOOTER///////*/
+
+/* FOOTER_STRUCTURE */
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left:0;
+    z-index: 3;
+
+}
+
+footer > section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer_slot > *{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER_STYLE */
+.footer_background{
+    background-color: rgba(26,26,26,255);
+}
+ 
+#infos > * {
+    margin-right: 10px;
+}
+#socials_accounts > *{
+    font-size: 30px;
+    line-height: 17px;
+}
+
