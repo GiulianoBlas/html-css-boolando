@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+img{
+    display: inline-block;
+}
+
 /* GENERAL_STYLE */
 .font{
     font-family: Arial, Helvetica, sans-serif
@@ -25,16 +29,19 @@ a{
     font-weight: bolder;
 }
 
-.text_color_white > .nav_slot >a{
+.text_color_white {
     color: white;
 }
 
-
 /*///////HEADER///////*/
+
+/* HEADER_STRUCTURE */
 header{
     position: fixed;
+    top: 0;
     right: 0;
     left:0;
+    z-index: 3;
 }
 
 nav{
@@ -65,27 +72,121 @@ nav{
     margin-left: 10px;
 }
 
-
 .nav_slot >img{
     width: 70%;
     margin-inline: 15%;
     display: block
 }
 
-.nav_slot > a {
-    line-height:
+/* HEADER_STYLE */
+.header_background{
+    background-color: rgba(255,105,0,255);
 }
 
-/* DEBUG */
+.text_color_white > .nav_slot >a{
+    color: white;
+}
+
+/*///////MAIN///////*/
+
+/* MAIN_STRUCTURE */
+main{
+    margin-top: 100px;
+
+    margin-bottom: 50px;
+
+}
+
+.product_row{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px -10px;
+
+}
+
+.product_slot{
+    width: calc((100% / 3 ) - 20px);
+    margin-inline: 10px;
+}
+
+.product_img{
+    position: relative;
+}
+.product_img >img{
+    width: 100%;
+}
+
+.like_button{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.product_badje{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+
+/* MAIN_STYLE */
+.product_badje > *{
+    padding: 5px;
+}
+
+.green_badje{
+    background-color: green;
+}
+
+.discount_badje{
+    background-color: red;
+}
+
+.like_button_style{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+    font-size: 25px;
+}
+
+.price{
+    color: red;
+
+}
+
+.old_price{
+    text-decoration:line-through
+}
+
+/*///////FOOTER///////*/
+
+/* FOOTER_STRUCTURE */
+
+/* MAIN_STYLE */
+.footer_background{
+    background-color: rgba(26,26,26,255);
+}
+/* DEBUG /
 
 .debug header{
     background-color: orange;
 }
-
+/*  */
 .debug section,nav {
     border: 1px dashed black;
 }
-
-.debug div{
-
+/*  /
+.debug main section{
+    
 }
+
+.debug  .product_slot{
+    background-color: aquamarine;
+}
+
+.debug .product_img{
+    background-color: brown;
+}
+
+/*  */
