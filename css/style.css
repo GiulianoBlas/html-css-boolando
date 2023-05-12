@@ -185,14 +185,6 @@ main{
 /*///////FOOTER///////*/
 
 /* FOOTER_STRUCTURE */
-footer{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left:0;
-    z-index: 3;
-
-}
 footer > section{
     display: flex;
     justify-content: space-between;
